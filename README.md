@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/joebew42/daily-activity-log-to-rss.svg)](https://travis-ci.org/joebew42/daily-activity-log-to-rss)
+
 # Daily Activity Log to RSS
 
 A web application that converts a [**Daily Activity Log**](https://github.com/joebew42/daily-activity-log)
