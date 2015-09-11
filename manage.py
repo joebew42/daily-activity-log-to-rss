@@ -49,7 +49,6 @@ if __name__ == '__main__':
         run(integration_tests())
 
     if 'server' == sys.argv[1]:
-        from rest.rest_app import create
+        from rest.rest_app import app
 
-        app = create()
         app.run()
