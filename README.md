@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/joebew42/daily-activity-log-to-rss.svg)](https://travis-ci.org/joebew42/daily-activity-log-to-rss)
 [![Coverage Status](https://coveralls.io/repos/joebew42/daily-activity-log-to-rss/badge.svg?branch=master&service=github)](https://coveralls.io/github/joebew42/daily-activity-log-to-rss?branch=master)
+[![Code Climate](https://codeclimate.com/github/joebew42/daily-activity-log-to-rss/badges/gpa.svg)](https://codeclimate.com/github/joebew42/daily-activity-log-to-rss)
 
 # Daily Activity Log to RSS
 
