@@ -1,12 +1,16 @@
 language: python
 python:
-  - "2.7"
+  - '2.7'
 install:
-  - "pip install -r requirements.txt"
-  - "pip install coveralls"
+  - pip install -r requirements.txt
+  - pip install coveralls
 script:
   - coverage run -p --source=src manage.py test
   - coverage run -p --source=src manage.py integration-test
   - coverage combine
-after_success:
-  coveralls
+after_success: coveralls
+deploy:
+  provider: heroku
+  api_key:
+    secure: BkF/sX/4OzjwqiUUEkCjFJ6ul+BiZ0hrzKcIqo9uA9YVHW5G3HSxxHoKXx6N4lmLBdOhZa+9LLYQ/e4ncebG/RsZ0vTF/np+SF2OOKNpe8EaguaNHHM7TCmlTi8QRNlO0bjNsJMXXmjwBV9IT3q4lss3cmXXQ6PCZNTHUScUjsujDApX67nFKBxddyVNXUsbHOSa/82QimdzBQvXCBhamssmNNZGzCqvLI5T4uAndmrb3lta4Zh6e5+7rFxE0Kpv2FRT0TkuKfOSZmQIQifOPrG9SzaB8qHw7x262DpHZzOu2vFvYj9UDtwJ3cMlfgwv3HUioXvAR4Hq++yydQfHr7xGHowcbBUprAvygtoEU3AK8uaBMf5emhNvZy09OHx84K90DnLy8BgWUSVZi3re5lLaqaWHBafot+7PamfJPyHqCUbCdoSLRl1O7RjbBig3Ke7T4ByfAziQYRIYZLxjSWJ7wyU00jqPRHkKumw7HyDMZyWbWk7O4yEHVIgdmB7SQB5ATYW23v/ozk2w2UnF3QpQnbeEIhnI6KKN38NHvMOhwAdEFClanYmdU+jMLnkWejEd1l9FUNvSgb8UBo2K822az8VbKvl/zsfajOTy9+Ijou4d5He0pzG2U71zyAKywnGX5jzWcqRpDgdmfXVVgw4k0/sbQg5N+Ezwkv6cd+k=
+  app: daily2rss
