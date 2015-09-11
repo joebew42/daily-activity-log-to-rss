@@ -5,7 +5,8 @@ install:
   - "pip install -r requirements.txt"
   - "pip install coveralls"
 script:
-  - coverage run --source=src manage.py test
-  - coverage run --source=src manage.py integration-test
+  - coverage run -p --source=src manage.py test
+  - coverage run -p --source=src manage.py integration-test
+  - coverage combine
 after_success:
   coveralls
