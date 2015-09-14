@@ -1,9 +1,9 @@
+# Daily Activity Log to RSS
+
 [![Build Status](https://travis-ci.org/joebew42/daily-activity-log-to-rss.svg)](https://travis-ci.org/joebew42/daily-activity-log-to-rss)
 [![Coverage Status](https://coveralls.io/repos/joebew42/daily-activity-log-to-rss/badge.svg?branch=master&service=github)](https://coveralls.io/github/joebew42/daily-activity-log-to-rss?branch=master)
 [![Code Climate](https://codeclimate.com/github/joebew42/daily-activity-log-to-rss/badges/gpa.svg)](https://codeclimate.com/github/joebew42/daily-activity-log-to-rss)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/joebew42/daily-activity-log-to-rss?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-# Daily Activity Log to RSS
 
 A web application that converts a [**Daily Activity Log**](https://github.com/joebew42/daily-activity-log)
 into a **RSS feed**
