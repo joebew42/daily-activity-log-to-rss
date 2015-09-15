@@ -8,6 +8,8 @@
 A web application that converts a [**Daily Activity Log**](https://github.com/joebew42/daily-activity-log)
 into a **RSS feed**
 
+Live app at: `https://daily2rss.herokuapp.com/rss/` ([Usage example](https://daily2rss.herokuapp.com/rss/?url=http://joebew42.github.io/events))
+
 # Getting started
 
 To start the application
