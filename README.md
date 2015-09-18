@@ -10,9 +10,11 @@ into a **RSS feed**
 
 Live app at: `https://daily2rss.herokuapp.com/rss/` ([example](https://daily2rss.herokuapp.com/rss/?url=http://joebew42.github.io/events))
 
-## Usage example
+## Usage
 
-`https://daily2rss.herokuapp.com/rss/?url=XXX` where `XXX` is an URL pointing to a Daily Activity Log.
+Visit `https://daily2rss.herokuapp.com/rss/?url=XXX`
+
+Where `XXX` is an URL pointing to a Daily Activity Log.
 
 # Getting started
 
