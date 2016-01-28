@@ -12,7 +12,7 @@ Live app at: `https://daily2rss.herokuapp.com/rss/` ([example](https://daily2rss
 
 ## Usage
 
-Visit `https://daily2rss.herokuapp.com/rss/?url=XXX`
+Visits `https://daily2rss.herokuapp.com/rss/?url=XXX`
 
 Where `XXX` is an URL pointing to a Daily Activity Log.
 
@@ -34,6 +34,25 @@ To run all tests
 
 1. Unit tests with `./manage.py test`
 2. Integration tests with `./manage.py integration-test`
+
+# Try it with Docker
+
+## Run from the official Docker image
+
+```
+$ docker run -d -p 5000:80 joebew42/daily2rss:latest
+```
+
+Visits `http://localhost/rss/?url=http://joebew42.github.io/events`
+
+## Build and run from scratch
+
+```
+$ docker build -t daily2rss:latest --rm=true .
+$ docker run -d -p 5000:80 daily2rss:latest
+```
+
+Visits `http://localhost/rss/?url=http://joebew42.github.io/events`
 
 # Contributing
 
