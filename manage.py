@@ -51,4 +51,4 @@ if __name__ == '__main__':
     if 'server' == sys.argv[1]:
         from rest.rest_app import app
 
-        app.run()
+        app.run(host='0.0.0.0')
