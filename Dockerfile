@@ -1,4 +1,4 @@
-FROM python:2-onbuild
+FROM joebew42/daily2rss-onbuild:latest
 
 RUN rm -rf .git && \
     rm -rf .gitignore && \
