@@ -1,0 +1,23 @@
+FROM alpine:3.3
+
+RUN apk update && \
+    apk add --no-cache python && \
+    apk add --no-cache python-dev && \
+    apk add --no-cache ca-certificates && \
+    apk add --no-cache gcc && \
+    apk add --no-cache libxml2-dev && \
+    apk add --no-cache libxslt-dev && \
+    apk add --no-cache musl-dev && \
+    apk add --no-cache --virtual=build-dependencies wget && \
+    wget "https://bootstrap.pypa.io/get-pip.py" -O /dev/stdout | python && \
+    apk del build-dependencies && \
+    rm -rf /var/cache/apk/*
+
+RUN mkdir -p /app
+WORKDIR /app
+
+EXPOSE 5000
+
+VOLUME /app
+
+CMD [ "sh", "-c", "while true; do sleep 10; done" ]
